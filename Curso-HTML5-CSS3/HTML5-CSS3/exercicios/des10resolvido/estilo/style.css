@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/*fonte importada do Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Birthstone+Bounce&display=swap');
+
+/*fonte baixada da internet*/
+
+@font-face {
+    font-family: 'Droid';
+    src: url(/des10resolvido/pacote-projeto-d010/fontes/idroid.otf);
+    
+}
+
+/*
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+*/
+/*raiz da árvore do documento, tudo que estiver em root serve para o documento inteiro*/
+
+:root{
+    --cor0:#ebe5c5;
+    --cor1:#3ddc84;
+    --cor2:#83e1ad;
+    --cor3:#2fa866;
+    --cor4:#1a5c37;
+    --cor5:#063d1e;  
+    --fonte-bebas: 'Bebas Neue', cursive;
+    --fonte-android: 'Droid';
+    --fonte-padrao: Arial, sans-serif;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-padrao);
+   /* cursor: url(/des10resolvido/cursor.cur), default; */
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+a.externo::after{
+    content: ' \1F517'; /*Ou '🔗'  para adicionar o emoji de corrente (link externo)*/
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+
+    
+}
+
+header > h1{
+
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;    
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.467);
+}
+ 
+header > p{
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.467);
+}
+
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.342);
+
+
+}
+
+nav > a{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    background-color:rgba(162, 202, 153, 0.13)
+
+}
+
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+
+
+
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.364) ;
+    margin-bottom: 30px;
+    border-radius: 0 0 10px 10px;
+
+}
+
+main p{
+    margin: 15px 0;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1.1em;
+    
+}
+
+main strong{
+    color: var(--cor5);
+    font-weight: bold;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+    border-radius: 3px;
+
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+
+}
+
+main img{
+    width: 100%;
+}
+
+main > article > h1, h2{
+    color: rgb(11, 63, 0);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+}
+
+main h2{
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+    
+    
+}
+
+.bugdroid{
+    max-width: 350px;
+    display: block; /*<img> não é um bloco, por isso essa configuração...*/
+    margin: auto; /*... para centralizar o bloco*/
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.392);
+}
+
+aside h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px;
+    border-radius: 10px 10px 0 0;
+}
+
+aside ul{
+    list-style-type: '🟢 '; /*ou '\1F7E2'*/
+    list-style-position: inside; /*bolinha (marcador) para o lado de dentro*/
+    columns: 2; /*divide o conteúdo em 2 colunas*/
+    line-height: 1.5em;
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;    
+
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
+}
+
+.video{
+    background-color: black;
+    margin: 0 -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 58.5%;
+    position: relative;
+
+
+
+}
+
+.video >iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+
+}

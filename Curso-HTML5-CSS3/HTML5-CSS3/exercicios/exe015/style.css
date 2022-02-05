@@ -1,0 +1,20 @@
+@charset "UTF-8"; /*REGRA para utilização do UTF-8 (para uso de acentos da língua portuguesa)*/
+
+body{
+    background-color: skyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: blue;
+    background-color: rgba(128, 128, 128, 0.398);
+}
+
+p {
+    text-align: justify;
+}

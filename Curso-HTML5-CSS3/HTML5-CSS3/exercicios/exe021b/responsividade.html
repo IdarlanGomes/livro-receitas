@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body{
+            background-color: lightgrey;
+            
+        }
+
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 200px;
+            max-width: 800px;
+        
+            /* width: 800px; /*largura do conteúdo até 800px*/ 
+            margin: auto; /*centraliza o conteúdo na viewport*/
+        }
+
+        main > h1{
+            min-width: 100px;
+            max-width: 800px;
+            display: block;
+        }
+
+        main img{
+            width: 100%; /*a imagem fica 100% o tamanho do conteúdo (não "escapa" para as laterais*/
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, amet commodi praesentium molestias culpa laudantium similique, earum voluptatem quibusdam dicta necessitatibus harum accusamus ut, officia aut? Commodi laudantium quia eos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet vel dolores iusto minima commodi quas assumenda eum enim perspiciatis, libero minus fugit dolore ad? Sint eligendi fugiat autem ullam maiores!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita nobis, incidunt sequi error libero magni aliquid porro laborum nulla rem provident non! Aperiam, tempora tempore. Quo provident dolor corporis asperiores.
+        </p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="des10/pacote-projeto-d010/imagens/irina-blok-pq.jpg">
+            <img src="des10/pacote-projeto-d010/imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis tenetur ullam iste commodi accusantium animi asperiores. Accusantium provident cum perspiciatis eum ipsa nihil quos accusamus dignissimos, fuga officia repellat ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt laborum, consectetur similique aliquid incidunt perspiciatis iusto, est ducimus provident iste, nulla et? Asperiores, quod molestias. Labore ea excepturi placeat consequuntur.
+        </p>
+    </main>
+</body>
+</html>

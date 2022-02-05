@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*a linha abaixo significa que os parágrafos <p> que são filhos (child) da <div>, ou seja, estão dentro da <div> serão os únicos a serem estilizados*/
+        div > p{ 
+            display: none;
+        }
+        /*já a linha abaixo, aplica a pseudo-classe hover aos parágrafos <p> dentro da <div>*/
+        div:hover > p{
+            display: block;
+            color: white;
+            background-color: red;
+            width: 250px;
+        }
+
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Fora da &lt;div&gt;. Passe o mouse sobre o texto abaixo:</p>
+    <div>
+        Dentro da &lt;div&gt;:<br> 
+        Não &lt;p&gt;: Passe o mouse aqui!!
+        <p> &nbsp; Sim &lt;p&gt;: Texto escondido...</p>
+    </div>
+    <p>Fora da &lt;div&gt;: FIM do exemplo.</p>
+</body>
+</html>

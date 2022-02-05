@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(211, 211, 211, 0.44);
+            margin: 0px
+        }
+
+        header{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        nav{
+            background-color: rgb(51, 50, 50);
+            padding: 2px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.426);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            margin-right: 10px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.426);
+        }
+
+        article{
+            background-color: rgba(245, 222, 179, 0.487);
+            padding: 15px;
+            
+        }
+
+        article > aside{
+            background-color: rgba(245, 222, 179, 0.487);
+        }
+
+        footer{
+            background-color: rgb(51, 50, 50);
+            margin: 0px;
+            padding: 4px;
+            text-align: center;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+    </style>
+        
+</head>
+<body>
+    <!--cabeçalho-->
+    <header>
+        <h1>Meu site</h1> <!--nome ou logo do site-->
+        <nav> <!--links de navegação no site-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <!--conteúdo principal-->
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Artigo com aside</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nostrum, pariatur et similique neque deserunt in ad amet maxime, earum, quae asperiores consectetur voluptatem. In, sed! Incidunt accusamus quibusdam explicabo!</p>
+                <aside>
+                    <p>Artigo escrito por Daio</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+    </main>
+    <!--rodapé-->
+    <footer>
+        <p>Desenvolvido por Idarlan Gomes &copy;</p>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        /*box-level*/
+        h1{
+            background-color: lightgrey;
+            text-align: center;
+
+            /*box sizing*/
+            height: 300px;
+            width: 300px;
+
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: darkgray;*/
+
+            border: 10px solid darkgray; /*shorhand*/
+
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;*/
+
+            padding: 10px 10px 10px 10px; /*top, right, bottom, left*/
+
+            /* margin: auto; centraliza a box-level*/
+            /*margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;*/
+
+            margin: 10px; /*quando todos os lados forem iguais, também pode-se aplicar só um valor de 10px. E se aplicarmos dois valores 10px 15px, por exemplo, em cima-embaixo fica 10px e direita-esquerda fica 15px. margin: 20px auto 20px auto => centraliza a box horizontalmente (direita-esquerda auto)*/
+
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-offset: 5px;*/
+
+            outline: 2px dashed red
+
+
+
+        }
+
+        /*inline-level*/
+
+        a{
+            border-width: 2px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p> 
+</body>
+</html>
