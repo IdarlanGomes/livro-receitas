@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo Fixo de Tela</title>
+    <style>
+        body{
+            height: 100vh; /*conteúdo de body ocupa 100% da viewport (janela)*/
+           
+            /*
+            
+            background-color: black;
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: center top;
+            background-repeat: no-repeat;
+            /*background-size: 100%;*/ /*ocupa 100% do tamanho da tela. É melhor do que configurar com px*/ /*
+            background-size: cover; /*cobre a viewport. C*/
+            /* background-attachment: fixed; /*fixa a imagem de background para não rolar junto com o conteúdo*/
+
+            
+
+        /*
+        shorthand = background
+        color > image > position > repeat > *size* (não funciona) > attachment
+        */
+            background: white url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover; /*fora da shorthand*/
+
+        }    
+           
+        main{
+            background-color: wheat;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 2px solid rgba(0, 28, 139, 0.905);
+            border-radius: 15px;
+
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iusto quas exercitationem atque necessitatibus, delectus, doloremque culpa tempore provident dignissimos molestiae quaerat tenetur aspernatur laborum voluptatibus optio expedita vero repudiandae?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad id quibusdam similique repellat numquam, deserunt mollitia necessitatibus ducimus ab rem incidunt quod explicabo odio saepe, excepturi facere. Repellat, sequi sapiente.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod doloribus ipsam quasi, laudantium obcaecati error quibusdam commodi? Repellendus facere dolorum, veniam voluptate reprehenderit consequatur ipsum voluptatibus architecto. Exercitationem, tempora quae.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aperiam, corrupti eum atque debitis error perspiciatis ratione animi rerum culpa facere reiciendis officia dolor possimus et. Maxime illo blanditiis cupiditate!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores adipisci esse suscipit quibusdam, deserunt vel ducimus corrupti minus quod possimus dicta, rerum repellat temporibus explicabo error quae vero ipsam rem.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum quaerat harum sed, minus reiciendis quia vel, a in, magni quo minima repellendus id autem placeat totam laboriosam sapiente maxime!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum modi eligendi laudantium quam ullam dignissimos accusantium numquam quae quaerat delectus. Enim saepe et officia molestiae nemo deserunt, in blanditiis totam.lorem
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, voluptates doloribus temporibus exercitationem illo numquam eligendi! Suscipit molestias iure adipisci unde obcaecati excepturi repellendus harum sed tempora ab! Recusandae, sint.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum deserunt laborum sed expedita quam debitis hic cumque iure iusto quis, necessitatibus, fuga voluptate, et commodi similique nemo excepturi consequuntur recusandae.
+        </p>
+    </main>
+</body>
+</html>
